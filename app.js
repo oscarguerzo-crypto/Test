@@ -56,6 +56,8 @@ content:`
 </ul>
 </div>
 
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 2</div>
+
 <h3>Troubleshooting Steps</h3>
 
 <h4>Loop</h4>
@@ -92,6 +94,8 @@ content:`
 </ul>
 </div>
 
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 3</div>
+
 <h4>If Escalation Is Needed, Get:</h4>
 <ul>
 <li>Customer's exact location (address)</li>
@@ -100,6 +104,8 @@ content:`
 <li>Loop: Serial number</li>
 <li>e-SIM MSISDN</li>
 </ul>
+
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 4</div>
 `
 },
 
@@ -139,6 +145,8 @@ content:`
 </ul>
 </div>
 
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 5</div>
+
 <h4>e-SIM</h4>
 <p>Please ensure the following before proceeding with installation:</p>
 <ul>
@@ -155,6 +163,8 @@ content:`
 <li>Restart the device and attempt the installation again.</li>
 <li>If issues persist, delete unused e-SIM profiles if applicable.</li>
 </ul>
+
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 6</div>
 `
 },
 
@@ -261,6 +271,8 @@ content:`
 <figcaption>theStation — e-SIM compatibility check</figcaption>
 </figure>
 
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 10</div>
+
 <h3>Troubleshooting</h3>
 
 <h4>e-SIM</h4>
@@ -276,6 +288,8 @@ content:`
 <li>If the customer is not in the UK – Mention that we only cater UK customers, then continue with other concerns.</li>
 </ul>
 </div>
+
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 11</div>
 `
 },
 
@@ -303,6 +317,8 @@ content:`
 </ul>
 </div>
 
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 12</div>
+
 <h3>Troubleshooting (e-SIM Transfer Steps)</h3>
 
 <ol>
@@ -327,6 +343,8 @@ content:`
 </ul>
 </div>
 
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 13</div>
+
 <h3>Troubleshooting (e-SIM Transfer when customer does not have access to old phone)</h3>
 
 <ul>
@@ -349,6 +367,8 @@ content:`
 </ul>
 </li>
 </ul>
+
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 14</div>
 `
 },
 
@@ -374,6 +394,8 @@ content:`
 
 <p>Once you turn it off, a pop-up with a website link will appear.</p>
 
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 15</div>
+
 <h3>Verification</h3>
 
 <ol>
@@ -390,6 +412,8 @@ content:`
 <li>Legal adult, gambling, dating, and other age-restricted websites should be accessible once the filter is off, unless they fall under the legal blocking requirements above.</li>
 </ul>
 </div>
+
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 16</div>
 `
 },
 
@@ -490,12 +514,16 @@ content:`
 <li>Reset Network Settings</li>
 </ul>
 
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 20</div>
+
 <h3>Activating the eSIM</h3>
 <ul>
 <li>Enable Data Roaming</li>
 <li>Toggle Airplane Mode</li>
 <li>Select Network Manually</li>
 </ul>
+
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 21</div>
 `
 },
 
@@ -1007,6 +1035,8 @@ content:`
 <li>Confirm and continue</li>
 </ol>
 
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 51</div>
+
 <figure class="kb-figure">
 <img src="${kbImages.image17}" alt="Password reset guide screenshot 1">
 <figcaption>Password reset guide — LoopDL site (1)</figcaption>
@@ -1025,6 +1055,8 @@ content:`
 <li>If using Google or Apple, advise the customer to follow their provider's password reset guidance (e.g. using a passkey, etc.).</li>
 </ul>
 </div>
+
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 52</div>
 `
 },
 
@@ -1162,6 +1194,8 @@ content:`
 <li>Tracking URL</li>
 </ul>
 
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 40</div>
+
 <h3>What to do next</h3>
 
 <ul>
@@ -1186,6 +1220,8 @@ content:`
 <li>If the address is not correct, follow Change of Address process.</li>
 </ul>
 </div>
+
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 41</div>
 `
 },
 
@@ -1198,6 +1234,8 @@ content:`
 <ul>
 <li>Order status</li>
 </ul>
+
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 42</div>
 
 <h3>What to do next</h3>
 
@@ -1220,6 +1258,8 @@ content:`
 <li>Other statuses – address can be updated.</li>
 </ul>
 </div>
+
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 43</div>
 `
 },
 
@@ -1402,6 +1442,11 @@ content:`
 <ol>
 <li>Power off device</li>
 <li>Hold Power + Volume Up</li>
+</ol>
+
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 58</div>
+
+<ol start="3">
 <li>Navigate to Wipe Data / Factory Reset
 <div class="recovery-images">
 <figure class="kb-figure">
@@ -1413,6 +1458,8 @@ content:`
 <li>Confirm reset</li>
 <li>Select Reboot System Now</li>
 </ol>
+
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 59</div>
 
 `
 },
@@ -1486,6 +1533,8 @@ content:`
 <li>If issue persists and customer insists, process scheduled cancellation</li>
 </ol>
 
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 48</div>
+
 <h3>Incompatibility</h3>
 <ol>
 <li>Check phone make and model</li>
@@ -1494,6 +1543,8 @@ content:`
 <li>If incompatible, attempt retention on another phone</li>
 <li>If declined, process scheduled cancellation</li>
 </ol>
+
+<div class="inline-source">Source: LoopDL UK Gameplan — Slide 49</div>
 `
 },
 
