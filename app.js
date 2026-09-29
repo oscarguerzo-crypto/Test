@@ -75,23 +75,11 @@ content:`
 <li>Restart the device; reboot (turn phone off, then back on)</li>
 <li>Make sure the customer is using the same phone we are troubleshooting, or the device is present on the call</li>
 <li>Check the APN settings</li>
-<li>Toggle airplane mode (steps below)</li>
+<li>Toggle airplane mode (steps on next slide)</li>
 </ul>
-
-<h4>Toggle Airplane Mode / Manual Network Selection</h4>
-<ol>
-<li>Toggle Airplane Mode: turn Airplane Mode on for 10 seconds, then turn it off to force a network scan.</li>
-<li>Manual Network Selection (iPhone): Settings → Mobile Service/Cellular → Network Selection. Turn off Automatic, then select Vodafone from the list.</li>
-<li>Manual Network Selection (Android): Settings → Connections → Mobile Networks → Network Operators. Turn off Select automatically, then choose Vodafone.</li>
-<li>Check APN Settings: make sure the Access Point Name (APN) is set to: wap.vodafone.co.uk</li>
-<li>Toggle Airplane Mode again: turn it on for 10 seconds, then off again.</li>
-</ol>
 
 <div class="warning-box">
-<ul>
-<li>If the customer does not have an extra phone: mention the troubleshooting steps and callback after 3 minutes.</li>
-<li>If the issue persists, get the error and ask the customer to send it via email, then escalate to MO under network issue.</li>
-</ul>
+<p>If issue insists, get the error and ask the customer to send it via email. Then escalate to MO under network issue.</p>
 </div>
 
 <div class="inline-source">Source: LoopDL UK Gameplan — Slide 3</div>
@@ -671,11 +659,9 @@ content:`
 </ul>
 
 <div class="warning-box">
-<ul>
-<li>Note: there are no set parameters for when a PTP is present on the account — check on a case-by-case basis.</li>
-<li>Check the account first before disclosing about the PTP feature.</li>
-<li>Always disclose SSO (Self Service Options) on the website if PTP is available for the customer.</li>
-</ul>
+<p>Setting up a Promise to Pay may help prevent the service from being automatically cancelled on the 7th day.</p>
+<p>Customers should set up a Promise to Pay before the 7th day to help avoid cancellation and keep their service active.</p>
+<p>They should also ensure sufficient funds are available on the agreed payment date so the payment can be processed successfully.</p>
 </div>
 `
 },
@@ -1661,6 +1647,107 @@ content:`
 `
 }
 },
+notes:{
+"Notes":{
+title:"Notes",
+content:`
+<h3>Important info from cx</h3>
+<ul>
+<li>Phone number and email they wish to be contacted from</li>
+<li>Link of the account if multiple accounts are involved</li>
+<li>Email if the customer has multiple accounts</li>
+<li>Special requests (etc.)</li>
+<li>If the e-SIM the customer is using is 3rd party</li>
+</ul>
+
+<h3>Porting and SIM Swap</h3>
+<ul>
+<li>If porting-in from another provider
+<ul>
+<li>Status of e-SIM from their previous provider
+<ul>
+<li>Released</li>
+<li>Not released</li>
+<li>When was the PAC code requested from the prior company</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Phone number before and after porting / SIM swap</li>
+<li>PAC code</li>
+</ul>
+
+<h3>Anything That Needs TL Permission</h3>
+<ul>
+<li>Refund</li>
+<li>Immediate cancellation of account</li>
+<li>SIM swap</li>
+</ul>
+
+<h3>Network</h3>
+<ul>
+<li>Speed test results</li>
+<li>Exact location where network is used (address with postal code)</li>
+<li>Device in question
+<ul>
+<li>Loop serial number</li>
+<li>e-SIM MSISDN</li>
+<li>Make and model of phone</li>
+</ul>
+</li>
+<li>Error message(s) observed</li>
+</ul>
+
+<h3>Billing</h3>
+<ul>
+<li>Promised PTP date</li>
+<li>Account status</li>
+<li>Credit and compensation
+<ul>
+<li>Amount</li>
+</ul>
+</li>
+</ul>
+
+<h3>Logistics</h3>
+<ul>
+<li>Delivery address change</li>
+<li>Device issue
+<ul>
+<li>Customer-induced</li>
+<li>Upon delivery</li>
+</ul>
+</li>
+</ul>
+
+<h3>Cancellation</h3>
+<ul>
+<li>Reason for cancellation</li>
+</ul>
+
+<h3>Etc.</h3>
+<ul>
+<li>Processes that are account-related
+<ul>
+<li>PTP</li>
+</ul>
+</li>
+<li>Disclosures when needed</li>
+<li>Information checked on the KB during troubleshooting ("Things we check")</li>
+<li>Prior troubleshooting the customer did before the call</li>
+<li>Troubleshooting done and info extracted, error message(s), so that it will not be available for next agents</li>
+<li>Any actions taken on theStation</li>
+<li>To be compiled if more info is discovered or suggested by the team</li>
+</ul>
+
+<h3>Important Emails</h3>
+<ul>
+<li>support@loopdl.co.uk</li>
+<li>legal@loopdl.co.uk</li>
+</ul>
+`
+}
+},
 };
 
 let currentCategory="";
@@ -1690,6 +1777,12 @@ function openArticle(category,article){
   footnote.innerHTML='';
   footnote.style.display='none';
  }
+}
+function openNotes(){
+ currentCategory="notes";
+ const list=document.getElementById('articleList');
+ list.innerHTML='';
+ openArticle('notes','Notes');
 }
 function stripHtml(html){
  return html.replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim();
