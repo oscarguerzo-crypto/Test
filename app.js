@@ -59,22 +59,28 @@ content:`
 <h3>Troubleshooting Steps</h3>
 
 <h4>Loop</h4>
-<ul>
+<ol>
 <li>Run a speed test</li>
 <li>Optimize the connection</li>
 <li>Reboot the device</li>
-<li>Get the customer’s exact location if escalation is needed</li>
+<li>Get the customer's exact location if escalation is needed</li>
 <li>Factory reset as last resort - check with TL first.</li>
-</ul>
+</ol>
 
 <h4>e-SIM</h4>
-<ul>
+<ol>
 <li>Confirm if SMS, calls, and data are all not working</li>
-<li>Restart the device; reboot (turn phone off, then back on)</li>
-<li>Make sure the customer is using the same phone we are troubleshooting, or the device is present on the call</li>
-<li>Check the APN settings</li>
-<li>Toggle airplane mode (steps below)</li>
-</ul>
+<li>Restart the device; reboot (Turn your phone off, then turn it back on)</li>
+<li>Make sure the customer is using the same phone we are troubleshooting or the device is present upon the call.</li>
+<li>Check the APN settings.</li>
+<li>Toggle airplane mode (steps on next slide)</li>
+</ol>
+
+<div class="warning-box">
+<p>If issue persists after all TS, advice the customer to observe the issue within 24-48 hours. Offer callback. After said timeframe, ask customer if they wish to continue service.</p>
+</div>
+
+<p class="slide-marker">Source: LoopDL UK Gameplan — Slide 3</p>
 
 <h4>Toggle Airplane Mode / Manual Network Selection</h4>
 <ol>
@@ -132,6 +138,8 @@ content:`
 </ul>
 </div>
 
+<p class="slide-marker">Source: LoopDL UK Gameplan — Slide 6</p>
+
 <h4>e-SIM</h4>
 <p>Please ensure the following before proceeding with installation:</p>
 <ul>
@@ -148,6 +156,8 @@ content:`
 <li>Restart the device and attempt the installation again.</li>
 <li>If issues persist, delete unused e-SIM profiles if applicable.</li>
 </ul>
+
+<p class="slide-marker">Source: LoopDL UK Gameplan — Slide 7</p>
 `
 },
 
