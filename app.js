@@ -29,7 +29,7 @@ const knowledge = {
 network:{
 "Slow Speeds / No Connection / WIFI issues / Streaming":{
 title:"Network - Slow Speeds / No Connection / WIFI issues / Streaming",
-source:"Slides 2–5",
+source:"Slides 2–3, 5",
 content:`
 <h3>Things we check</h3>
 <p><em>ask the customer, check in the station, etc.</em></p>
@@ -73,7 +73,7 @@ content:`
 <li>Restart the device; reboot (Turn your phone off, then turn it back on)</li>
 <li>Make sure the customer is using the same phone we are troubleshooting or the device is present upon the call.</li>
 <li>Check the APN settings.</li>
-<li>Toggle airplane mode (steps on next slide)</li>
+<li>Toggle airplane mode (turn it on, then off, to refresh the connection)</li>
 </ol>
 
 <div class="warning-box">
@@ -82,6 +82,7 @@ content:`
 
 <p class="slide-marker">Source: LoopDL UK Gameplan — Slide 3</p>
 
+<!-- RESERVED: Slide 4 (hidden, not displayed). Future content goes here.
 <h4>Toggle Airplane Mode / Manual Network Selection</h4>
 <ol>
 <li>Toggle Airplane Mode: turn Airplane Mode on for 10 seconds, then turn it off to force a network scan.</li>
@@ -97,8 +98,7 @@ content:`
 <li>If the issue persists, get the error and ask the customer to send it via email, then escalate to MO under network issue.</li>
 </ul>
 </div>
-
-<!-- Slide 4: placeholder -->
+-->
 `
 },
 
@@ -109,21 +109,14 @@ content:`
 <h3>Things we check</h3>
 <p><em>ask the customer, check in the station, etc.</em></p>
 
-<div class="warning-box">
-<ul>
-<li>Ensure that the customer has the ability to login to their LoopDL account. If not, then go to Account - Password Reset.</li>
-<li>If the customer is not in the UK tell them the service is only within UK.</li>
-<li>Otherwise, proceed with troubleshooting.</li>
-</ul>
-</div>
+<p>Ensure customer can connect to a stable WIFI or mobile data hotspot.</p>
 
 <h4>Loop</h4>
 <ol>
 <li>Set up your loop by completing the Android setup process on the device.</li>
 <li>Tap the activation widget on the loop's home screen.</li>
 <li>Scan the QR code displayed on your loop with your phone.</li>
-<li>Follow the activation prompts on the LoopDL website.</li>
-<li>Enter your activation code.</li>
+<li>Follow the activation prompts on the LoopDL website, then enter your activation code, which was sent during purchase.</li>
 </ol>
 
 <figure class="kb-figure">
@@ -154,8 +147,17 @@ content:`
 <h4>Device Troubleshooting</h4>
 <ul>
 <li>Restart the device and attempt the installation again.</li>
+<li>Make sure the customer is using the correct credentials during login.</li>
 <li>If issues persist, delete unused e-SIM profiles if applicable.</li>
 </ul>
+
+<div class="warning-box">
+<ul>
+<li>If the e-SIM is on another device, proceed with Transfer e-SIM / e-SIM not working.</li>
+<li>If the customer is not in the UK, tell them the service is only within the UK.</li>
+<li>Otherwise, proceed with troubleshooting.</li>
+</ul>
+</div>
 
 <p class="slide-marker">Source: LoopDL UK Gameplan — Slide 7</p>
 `
@@ -326,7 +328,7 @@ content:`
 <div class="warning-box">
 <ul>
 <li>If it did not work: Uninstall e-SIM / LoopDL app then reinstall.</li>
-<li>If issue persists, ask permission from TL for SIM Swap.</li>
+<li>If issue persists, do not SIM swap — escalate.</li>
 </ul>
 </div>
 
@@ -411,21 +413,6 @@ content:`
 </ol>
 `
 },
-"Steps to Manually Connect Vodafone UK e-SIM":{
-title:"Network - Steps to Manually Connect Vodafone UK e-SIM",
-source:"Slide 19",
-content:`
-<h3>Things we check</h3>
-<ul>
-<li>Confirm e-SIM is fully deleted from the old phone</li>
-<li>Ask where the customer bought the phone (within the UK?)</li>
-<li>Check if the device supports e-SIM</li>
-<li>Get the make and model and verify compatibility</li>
-<li>Verify if e-SIM is allocated</li>
-</ul>
-`
-},
-
 "Use a 3rd Party SIM on Loop":{
 title:"Network - Use a 3rd Party SIM on Loop",
 source:"Slide 20",
@@ -480,25 +467,25 @@ source:"Slides 22–23",
 content:`
 <h3>Initial Checks</h3>
 <ul>
-<li>Verify e-SIM Support</li>
-<li>Stable Internet Connection</li>
-<li>Remove VPNs</li>
+<li>Verify e-SIM Support — ensure the specific phone model supports eSIM. While many modern rugged phones do, some regional variants may not. Check Settings &gt; About Phone and look for an EID number.</li>
+<li>Stable Internet — a strong Wi-Fi connection is required to download the e-SIM profile. Switch off mobile data and ensure Wi-Fi is stable.</li>
+<li>Remove VPNs — disable any active VPNs, as they can block the activation server.</li>
 </ul>
 
 <h3>Troubleshooting Installation</h3>
-<ul>
-<li>Use Manual Entry</li>
-<li>Restart and Retry</li>
-<li>Check for Software Updates</li>
-<li>Reset Network Settings</li>
-</ul>
+<ol>
+<li>Use Manual Entry: if the QR code fails, use the manual activation details (SM-DP+ Address or activation string, Activation Code) provided by your carrier.</li>
+<li>Restart and Retry: a simple restart can fix stuck "Activating..." prompts.</li>
+<li>Check for Software Updates: Settings &gt; System &gt; System Update, to ensure the phone has the latest software.</li>
+<li>Reset Network Settings: Settings &gt; System &gt; Reset options &gt; Reset Wi-Fi, mobile &amp; Bluetooth. This can clear corrupted network data.</li>
+</ol>
 
 <h3>Activating the eSIM</h3>
-<ul>
-<li>Enable Data Roaming</li>
-<li>Toggle Airplane Mode</li>
-<li>Select Network Manually</li>
-</ul>
+<ol>
+<li>Enable Data Roaming: if using a travel e-SIM, enable data roaming in the settings for that specific e-SIM profile.</li>
+<li>Toggle Airplane Mode: turn on Airplane mode for 30s, then off to refresh connections.</li>
+<li>Select Network Manually: if it does not automatically connect, go to Settings &gt; Network &amp; Internet &gt; SIMs &gt; [Your e-SIM] &gt; Network operators and choose the supported network.</li>
+</ol>
 `
 },
 
@@ -512,10 +499,10 @@ content:`
 <li>Go to Settings</li>
 <li>Tap Network & Internet</li>
 <li>Tap SIMs</li>
-<li>Tap Add SIM</li>
+<li>Tap + Add SIM</li>
 <li>Tap Don't have a SIM card?</li>
 <li>Tap Enter code manually</li>
-<li>Paste or type your LSA string</li>
+<li>Paste or type your LSA string (see activation string in Station)</li>
 <li>Tap Connect / Add</li>
 <li>Wait for profile download</li>
 <li>Tap Activate / Turn on</li>
@@ -589,12 +576,13 @@ content:`
 <h3>Steps</h3>
 
 <ol>
-<li>Run speed test and optimization in theStation</li>
-<li>Check customer experience</li>
-<li>Verify connection speed with customer</li>
-<li>Get customer feedback</li>
-<li>Confirm satisfaction and overall experience</li>
-<li>Move to healthy</li>
+<li><strong>Onboarding new devices</strong>
+<ul><li>Run speed test and optimization in theStation</li></ul></li>
+<li><strong>Checking experience</strong>
+<ul><li>Verify connection speed with the customer</li></ul></li>
+<li><strong>Getting customer feedback</strong>
+<ul><li>Confirm satisfaction and overall experience with the product and service</li></ul></li>
+<li><strong>Move to healthy</strong></li>
 </ol>
 `
 }
@@ -621,35 +609,27 @@ content:`
 },
 
 "Customer can't pay":{
-title:"Billing - Customer can't pay",
+title:"Billing - Customer can't pay and PTP",
 source:"Slide 29",
 content:`
-<h3>Things we check</h3>
-
-<ul>
-<li>Check the card expiration date</li>
-<li>Review the error message</li>
-<li>Check the transaction history</li>
-</ul>
-
 <h3>What to do next</h3>
 <ul>
 <li>Tell the customer that payments are processed via saved card details or by entering new payment information at checkout.</li>
 <li>If the customer has an active subscription, payments are charged automatically monthly.</li>
 </ul>
 
-<h3>If the Customer Still Can't Pay</h3>
+<h3>If the Customer Can't Pay</h3>
+<p>Check if a Promise to Pay (PTP) is present on the account.</p>
 <ul>
-<li>Check if a Promise to Pay (PTP) is present on the account.</li>
-<li>If there is a PTP, suggest processing it. Do not select the last day of the month, as this date is not accepted by the system.</li>
-<li>If there is no PTP available on the account, let the customer know that they need to pay so the service can continue.</li>
+<li>If there is a PTP, suggest processing it. Do not pick the last date of the month — it is not applicable on the account (the last day will not be accepted by the system).</li>
+<li>If there is no PTP available on the account, let the customer know that they really need to pay the account so that the service will continue.</li>
 </ul>
 
 <div class="warning-box">
 <ul>
-<li>Note: there are no set parameters for when a PTP is present on the account — check on a case-by-case basis.</li>
-<li>Check the account first before disclosing about the PTP feature.</li>
-<li>Always disclose SSO (Self Service Options) on the website if PTP is available for the customer.</li>
+<li>Setting up a Promise to Pay may help prevent the service from being automatically cancelled on the 7th day.</li>
+<li>Customers should set up a Promise to Pay before the 7th day to help avoid cancellation and keep their service active.</li>
+<li>They should also ensure sufficient funds are available on the agreed payment date so the payment can be processed successfully.</li>
 </ul>
 </div>
 `
@@ -923,41 +903,6 @@ content:`
 `
 },
 
-"Reactivation (Inactive Account)":{
-title:"Billing - Reactivation (Inactive Account) — No Payment Made Yet",
-source:"Slide 41",
-content:`
-<h3>Things we check</h3>
-<p><em>ask the customer, check in the station, etc.</em></p>
-
-
-<ul>
-<li>Customer's account is inactive due to non-payment</li>
-<li>Customer wants to reinstate the account</li>
-</ul>
-
-<h3>What to do next</h3>
-
-<p>To reinstate the service, the customer won't need to purchase a new device, as their existing Loop device is already linked to their account. The LoopDL App is pre-installed on the Loop Device — have them follow these steps:</p>
-
-<ol>
-<li>Connect the LOOP device to a Wi-Fi network or mobile hotspot.</li>
-<li>Sign in to the account.</li>
-<li>Go to My Account → Manage → My Subscription.</li>
-<li>Select the option to Reactivate or Resubscribe to the Unlimited Data Plan.</li>
-<li>A payment prompt will appear — process the upfront payment to complete the reactivation.</li>
-</ol>
-
-<p>Once the subscription has been successfully reactivated, service should resume on the customer's current device.</p>
-
-<div class="warning-box">
-<ul>
-<li>Make sure there are 3 or fewer SIMs on the loop before trying to reinstate — the loop can hold a max of around 4 e-SIMs.</li>
-</ul>
-</div>
-`
-},
-
 "Wall Garden":{
 title:"Billing - Wall Garden",
 source:"Slide 42",
@@ -1004,7 +949,7 @@ content:`
 <li>If manually created email and not working, go to account actions</li>
 <li>Select Reset Password and Send</li>
 <li>Ask customer to check email for the 4 digit code</li>
-<li>Go to LoopDL website and click Sign In</li>
+<li>Click the link to go to the LoopDL website and click Sign In</li>
 <li>Click Forgot Password</li>
 <li>Enter 4 digit code and new password</li>
 <li>Confirm and continue</li>
@@ -1102,19 +1047,17 @@ content:`
 <ol>
 <li>Navigate to burger menu on top right corner</li>
 <li>Click Sign In</li>
-<li>Sign in to loopdl.co.uk</li>
-<li>Go to My Account</li>
-<li>Click Manage Active Plans</li>
-<li>Open Number Porting options</li>
-<li>Click Port In</li>
-<li>Enter number and PAC code</li>
-<li>Follow remaining prompts</li>
+<li>Sign in to the loopdl.co.uk site</li>
+<li>Go to My Account and click the plus button for the drop-down menu options</li>
+<li>Click Manage to open active plans</li>
+<li>Click the drop-down menu on Number Porting options</li>
+<li>Click Port In and follow the steps provided</li>
+<li>Insert the number requesting to port in and the PAC code related to it, then follow any other steps provided</li>
 </ol>
 
 <div class="warning-box">
 <ul>
-<li>Porting may take up to 48 business hours.</li>
-<li>Service interruption may occur during the transfer.</li>
+<li>Educate the customer that porting may take up to 48 business hours and that service will be interrupted during the process (loss of service on the number being ported — both LoopDL and previous provider).</li>
 <li>If there is an error, inform TL and escalate for manual porting.</li>
 </ul>
 </div>
@@ -1143,12 +1086,6 @@ content:`
 <li>Confirm the PAC and expiry with the customer and remind them their service will end on cutover.</li>
 </ol>
 
-<div class="warning-box">
-<ul>
-<li>Porting should complete within 48 business hours.</li>
-<li>Weekends and holidays are excluded.</li>
-</ul>
-</div>
 `
 }
 },
@@ -1346,7 +1283,7 @@ content:`
 <h4>Ask checklist / Troubleshooting</h4>
 <ul>
 <li>Battery saver is turned off</li>
-<li>Battery calibration completed</li>
+<li>Battery calibration done (charged 3 times, still depletes fast)</li>
 <li>Tried a different power cable</li>
 <li>Tried a different power outlet</li>
 <li>Performed factory reset</li>
@@ -1368,7 +1305,8 @@ source:"Slides 60–62",
 content:`
 <div class="warning-box">
 <ul>
-<li>Factory reset erases all stored data and settings.</li>
+<li><strong>Disclosure:</strong> A factory reset will erase all stored data, custom settings, and Wi-Fi configurations, returning the device to its original state.</li>
+<li><strong>Ask permission from TL before giving out factory reset steps to the customer.</strong></li>
 <li>If issue persists, escalate to support.</li>
 <li>If device arrived faulty, proceed to Logistics → Replacements.</li>
 </ul>
@@ -1494,12 +1432,18 @@ content:`
 
 <h3>Incompatibility</h3>
 <ol>
-<li>Check phone make and model</li>
-<li>Check compatibility</li>
-<li>If compatible, follow Activation process</li>
-<li>If incompatible, attempt retention on another phone</li>
-<li>If declined, process scheduled cancellation</li>
+<li>Check the mobile phone make and model and check for compatibility</li>
+<li>Compatible: check the activation status, then follow the Activation procedure</li>
+<li>Incompatible: try to retain the customer by asking to install the app on another phone
+<ul><li>Retained — ok</li><li>Customer declined — process scheduled cancellation</li></ul></li>
 </ol>
+
+<h3>Immediate Cancellation Request</h3>
+<p>If the customer wants to cancel the account immediately, ask for approval depending on the cancellation reason.</p>
+<ul>
+<li>If approved by TL — perform immediate cancellation.</li>
+<li>If not approved — explain to the customer that scheduled cancellation is needed, that there will not be a new invoice, and that the account will be cancelled at the end of the month.</li>
+</ul>
 `
 },
 
@@ -1536,8 +1480,8 @@ content:`
 <ul>
 <li>Check AI LoopDL interaction</li>
 <li>Call customer once</li>
-<li>If cooperative, resolve issue</li>
-<li>If not cooperative, escalate</li>
+<li>If the customer cooperates on the call, select the issue within the guide and help resolve it</li>
+<li>If the customer answers and is not cooperative because of the DNC, escalate</li>
 <li>If unanswered, escalate for email communication</li>
 </ul>
 
@@ -1545,9 +1489,10 @@ content:`
 <ul>
 <li>Check AI LoopDL interaction</li>
 <li>Call customer once</li>
-<li>Advise we only cater UK customers</li>
-<li>Schedule cancellation if needed</li>
-<li>If unanswered, escalate for email communication</li>
+<li>Advise that we only cater to UK-based customers</li>
+<li>Set account for scheduled cancellation if not yet scheduled</li>
+<li>If the customer answers and is not cooperative because of the DNC, escalate</li>
+<li>If the customer does not answer, escalate for email communication</li>
 </ul>
 `
 },
@@ -1557,12 +1502,13 @@ title:"Onboarding Process",
 source:"Slide 27",
 content:`
 <ol>
-<li>Run speed test and optimization in theStation</li>
-<li>Check customer experience</li>
-<li>Verify connection speed with customer</li>
-<li>Get customer feedback</li>
-<li>Confirm satisfaction and overall experience</li>
-<li>Move to healthy</li>
+<li><strong>Onboarding new devices</strong>
+<ul><li>Run speed test and optimization in theStation</li></ul></li>
+<li><strong>Checking experience</strong>
+<ul><li>Verify connection speed with the customer</li></ul></li>
+<li><strong>Getting customer feedback</strong>
+<ul><li>Confirm satisfaction and overall experience with the product and service</li></ul></li>
+<li><strong>Move to healthy</strong></li>
 </ol>
 `
 },
